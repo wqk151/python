@@ -1,0 +1,15 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
+{% if latest_question_list %}
+    <ul>
+        {% for question in latest_question_list %}
+        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+<!--load staticfiles 从staticfiles模块库加载 static 模板标签。 static模板标签会生成静态文件的绝对URL。
+永远使用相对路径来相互连接静态文件，因为这样可以改变STATIC_URL（static模板标签用它来生成URLs）而不用同时修改一大堆静态文件的路径。
+-->
