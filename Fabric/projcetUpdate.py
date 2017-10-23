@@ -18,9 +18,9 @@ localDate = time.strftime('%Y%m%d')
 updatePackage = 'datatangapi-service.tar.gz'
 
 #env.user = 'root'
-env.hosts = ['139.224.37.185:61301','139.224.37.185:61302']
-#env.password = '50dxOp&^4V1z'
-env.gateway = '124.243.248.107:22'
+env.hosts = []
+#env.password = '123'
+env.gateway = ''
 env.colorze_errors = True
 
 def uncompressUpdatePackage(package):

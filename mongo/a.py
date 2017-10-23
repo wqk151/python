@@ -15,9 +15,9 @@ formalyesdate = yesdate.strftime('%Y-%m-%d')
 newMongoConn = pymongo.MongoClient('172.16.1.5',27012)
 newMongodb = newMongoConn['apiservice']
 # 建立连接
-oldMongoConn = pymongo.MongoClient('40.125.201.186', 27011)
+oldMongoConn = pymongo.MongoClient('192.168.1.1', 27011)
 oldadminMongodb = oldMongoConn['admin']
-oldadminMongodb.authenticate('apimongoadmin', 'YZb4ce5L9o8n')
+oldadminMongodb.authenticate('apimongo', '')
 # 连接apiserviece库
 oldMongodb = oldMongoConn['apiservice']
 for i in range(19,30):
@@ -28,7 +28,7 @@ for i in range(19,30):
 
     # 密码认证admin库
     #adminMongodb = newMongoConn['admin']
-    #adminMongodb.authenticate('apimongoadmin','YZb4ce5L9o8n')
+    #adminMongodb.authenticate('apimongo','')
     # 连接apiservice库
 
     # 连接集合

@@ -21,8 +21,8 @@ env.pcre_app_dir = '/data/apps/pcre'
 
 
 env.user = 'root'
-env.hosts = ['139.224.37.185:61306']
-env.password = '50dxOp&^4V1z'
+env.hosts = ['']
+env.password = '123'
 env.colorze_errors = True
 
 def yum_packages():

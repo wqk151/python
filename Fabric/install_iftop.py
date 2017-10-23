@@ -13,8 +13,8 @@ remote_dir = '/data/tools/'
 local_file = ['iftop-1.0pre4.tar.gz', 'iftop_environment.sh']
 
 env.user = 'root'
-env.hosts = ['139.217.0.48','139.217.4.72','139.217.3.79','139.217.9.227','139.217.15.49','139.217.9.72','139.217.5.102']
-env.password = '50dxOp&^4V1z'
+env.hosts = []
+env.password = '1223'
 env.colorze_errors = True
 
 env.iftop_uncompress_dir = local_file[0].rstrip('.tar.gz')

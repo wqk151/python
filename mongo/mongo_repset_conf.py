@@ -15,7 +15,7 @@ logging.disable(logging.DEBUG)
 #env.hosts = ['10.10.20.59',]
 env.password = '123456'
 env.user = 'root'
-#env.gateway = '124.243.248.107'
+#env.gateway = ''
 env.locatDir = '/data/tools'
 env.remoteDir = '/data/tools'
 env.appsDir = '/data/apps'
@@ -25,17 +25,9 @@ env.scriptsDir = '/data/sh'
 env.homeOwner = 'jumpserver'
 # grouping the hosts
 env.roledefs = {
-    'tomcat': ['42.159.118.146','42.159.114.145',],
-    'jdk': ['42.159.118.146','42.159.116.246','42.159.114.221','42.159.115.32','139.217.12.97','42.159.114.145','139.217.24.57'],
-    'mysql': ['42.159.115.32'],
-    'mongodb': ['42.159.114.221'],
-    'zookeeper':['42.159.118.146','42.159.114.145','139.217.12.97'],
-    'python':['42.159.118.146','42.159.116.246','42.159.114.221','42.159.115.32','139.217.12.97','42.159.114.145','139.217.24.57'],
-    'iftop':['42.159.118.146','42.159.116.246','42.159.114.221','42.159.115.32','139.217.12.97','42.159.114.145','139.217.24.57'],
-    'iotop':['42.159.118.146','42.159.116.246','42.159.114.221','42.159.115.32','139.217.12.97','42.159.114.145','139.217.24.57'],
-    'mq':['139.217.12.97'],
-    'zabbix':['42.159.118.146','42.159.116.246','42.159.114.221','42.159.115.32','139.217.12.97','42.159.114.145','139.217.24.57'],
-    'kafka':['42.159.118.146','42.159.114.145','139.217.12.97'],
+    'tomcat': [],
+    'jdk': [],
+
 }
 # get the number of hosts within the cluster
 env.mongoNum = len(env.roledefs['mongodb']) if env.roledefs.has_key('mongodb') else 0
@@ -153,7 +145,7 @@ def changeMongoconfigure(flag):
     if flag==1:
         print yellow("enable security conf in mongodb configure file...")
         run("sed 's/\#//' %s" % mongoConfigureFile)
-        run('''echo 'use admin;db.createUser({user: "apimongoadmin",pwd: "YZb4ce5L9o8n",roles:[ "clusterAdmin","userAdminAnyDatabase","dbAdminAnyDatabase","readWriteAnyDatabase"]})' |%s/bin/mongo %s:%s/admin --shell''' % (mongoHomeDir, localIP, port))
+        run('''echo 'use admin;db.createUser({user: "apimongo",pwd: "",roles:[ "clusterAdmin","userAdminAnyDatabase","dbAdminAnyDatabase","readWriteAnyDatabase"]})' |%s/bin/mongo %s:%s/admin --shell''' % (mongoHomeDir, localIP, port))
 @roles('mongodb')
 def stop_all_mongodb():
     pass

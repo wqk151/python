@@ -8,17 +8,7 @@ from dns import resolver
 import threading
 import datetime
 import time
-domainlist = ['api.hydsk.com',
- 'api.xinshucredit.com',
- 'auth.context.cn',
- 'payriskapi.wecash.net',
- 'api.qixin007.com',
- 'api.acedata.com.cn',
- 'data.51daas.com',
- 'service.funinbook.com',
- 'api.jinjiedian.com',
- 'api.hfdatas.cm',
- 'auth.context.org']
+domainlist = []
 
 def recordlog(msg):
     with open('/data/log/domainResolvError.txt','ab') as f:

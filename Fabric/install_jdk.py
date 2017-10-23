@@ -13,9 +13,9 @@ remote_dir = '/data/tools/'
 local_file = ['jdk-7u51-linux-x64.tar.gz','jdk_environment.sh']
 
 env.user = 'root'
-env.hosts = ['139.217.0.48']
-env.password = '50dxOp&^4V1z'
-#env.gateway = '124.243.248.107'
+env.hosts = ['']
+env.password = '123'
+#env.gateway = ''
 env.colorze_errors = True
 
 def put_file():

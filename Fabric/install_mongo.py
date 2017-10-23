@@ -13,8 +13,8 @@ remote_dir = '/data/tools/'
 local_file = ['mongodb-linux-x86_64-rhel62-3.2.8.tgz','mongo_environment.sh','mongod.conf']
 
 env.user = 'root'
-env.hosts = ['139.224.37.185:61307']
-env.password = '50dxOp&^4V1z'
+env.hosts = ['']
+env.password = '123'
 env.colorze_errors = True
 env.mongo_install_dir = '/data/apps/mongo'
 env.mongo_data_dir = '/data/workspace/mongo'

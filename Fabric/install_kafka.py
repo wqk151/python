@@ -13,8 +13,8 @@ remote_dir = '/data/tools/'
 local_file = ['kafka_2.10-0.8.2.2.tgz','kafka_environment.sh','server.properties']
 
 env.user = 'root'
-env.hosts = ['139.224.37.185:61303','139.224.37.185:61304']
-env.password = '50dxOp&^4V1z'
+env.hosts = []
+env.password = '123'
 
 env.kafkalogdir = '/data/workspace/kafkadata'
 env.kafkaiplist = ['172.16.1.220','172.16.1.221']

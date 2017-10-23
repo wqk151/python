@@ -13,8 +13,8 @@ remote_dir = '/data/tools/'
 local_file = ['mysql-5.6.10.tar.gz','mysql_environment.sh']
 
 env.user = 'root'
-env.hosts = ['139.217.9.72']
-env.password = '50dxOp&^4V1z'
+env.hosts = ['']
+env.password = '123'
 env.colorze_errors = True
 env.mysal_install_dir = '/data/apps/mysql/'
 env.mysql_data_dir = '/data/workspace/mysql/'

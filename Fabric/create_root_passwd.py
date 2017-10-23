@@ -9,15 +9,15 @@ from fabric.api import *
 from fabric.contrib.console import confirm
 
 env.user = 'root'
-env.hosts = ['139.217.0.48','139.217.4.72','139.217.3.79','139.217.9.227','139.217.15.49','139.217.9.72','139.217.5.102']
-env.password = '50dxOp&^4V1z'
-#env.gateway = '124.243.248.107'
+env.hosts = []
+env.password = '123'
+#env.gateway = ''
 env.colorze_errors = True
 
 @task
 def create_root_passwd():
     print yellow("create root passwd")
-    sudo("echo '50dxOp&^4V1z' | passwd --stdin root")
+    sudo("echo '123' | passwd --stdin root")
 
 @task
 #配置hosts，并修改阿里云虚机的主机名

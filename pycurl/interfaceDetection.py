@@ -86,9 +86,9 @@ def createExcel():
 def sendEmail():
     HOST= 'smtp.163.com'
     SUBJECT = u"每周接口调用检测"
-    TO = ['fanwanqiang@datatang.com','wangqifeng@datatang.com','lucylqf@datatang.com']  # 群发收件人为列表形式
-    FROM = "ks412725@163.com"
-    SECRET = 'ks520813'
+    TO = ['','','']  # 群发收件人为列表形式
+    FROM = ""
+    SECRET = '123'
     msg = MIMEMultipart()
     msgtext = MIMEText("所有接口调用情况统计,见附件")
     msg.attach(msgtext)

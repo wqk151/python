@@ -9,11 +9,11 @@ from fabric.colors import *
 from fabric.context_managers import *
 from fabric.contrib.console import confirm
 import time
-env.gateway = '124.243.248.107'
+env.gateway = ''
 env.colorze_errors = True
 
 # 定义web服务器地址
-env.hosts = ['139.217.7.69']
+env.hosts = ['']
 env.now_time = time.strftime("%Y%m%d")
 # 本地代码路径
 env.project_dev_source = '/data/workspace'

@@ -13,9 +13,9 @@ remote_dir = '/data/tools/'
 local_file = ['Python-2.7.11.tgz','python_environment.sh']
 
 env.user = 'root'
-env.hosts = ['139.217.0.48']
+env.hosts = ['']
 env.password = ''
-#env.gateway = '124.243.248.107'
+#env.gateway = ''
 env.colorze_errors = True
 
 

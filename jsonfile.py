@@ -7,7 +7,7 @@
 import urllib2
 import json
 import sys
-# http://124.243.248.100:50070/jmx?qry=Hadoop:service=NameNode,name=NameNodeActivity
+# http://192.168.1.1:50070/jmx?qry=Hadoop:service=NameNode,name=NameNodeActivity
 def get_data(ip,port,qry_value,name):
     url = 'http://' + ip + ':' + port + '/jmx?qry='+qry_value
     reponse = urllib2.urlopen(url)

@@ -17,7 +17,7 @@ yes_acc = 'accounthistory_' + formalyesdate
 newMongoConn = pymongo.MongoClient('172.16.1.5',27012)
 # 密码认证admin库
 #adminMongodb = newMongoConn['admin']
-#adminMongodb.authenticate('apimongoadmin','YZb4ce5L9o8n')
+#adminMongodb.authenticate('apimongo','')
 # 连接apiservice库
 newMongodb = newMongoConn['apiservice']
 # 连接集合
@@ -26,9 +26,9 @@ newAccCollection = newMongodb[yes_acc]
 
 
 # 建立连接
-oldMongoConn = pymongo.MongoClient('40.125.201.186',27011)
+oldMongoConn = pymongo.MongoClient('192.168.1.1',27011)
 oldadminMongodb = oldMongoConn['admin']
-oldadminMongodb.authenticate('apimongoadmin','YZb4ce5L9o8n')
+oldadminMongodb.authenticate('apimongo','')
 # 连接apiserviece库
 oldMongodb = oldMongoConn['apiservice']
 # 连接集合

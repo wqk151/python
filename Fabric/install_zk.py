@@ -13,13 +13,13 @@ remote_dir = '/data/tools/'
 local_file = ['zookeeper-3.4.8.tar.gz','zk_environment.sh']
 
 env.user = 'root'
-env.hosts = ['139.224.37.185:61303','139.224.37.185:61304','139.224.37.185:61305']
-env.password = '50dxOp&^4V1z'
+env.hosts = []
+env.password = ''
 
 env.zkdatadir = '/data/workspace/zkdata'
 env.zkiplist = ['192.168.0.12','192.168.0.13','192.168.0.14']
 
-#env.gateway = '124.243.248.107'
+#env.gateway = ''
 env.colorze_errors = True
 
 def put_file():

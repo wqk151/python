@@ -13,8 +13,8 @@ remote_dir = '/data/tools/'
 local_file =[ 'server.properties',]
 kafka_config_dir = '/data/apps/kafka/config/'
 
-env.hosts = ['139.224.37.185:61303','139.224.37.185:61304',]
-env.password = '50dxOp&^4V1z'
+env.hosts = []
+env.password = ''
 
 
 def uploadUpdateConfigureFile():

@@ -13,8 +13,8 @@ remote_dir = '/data/tools/'
 local_file = ['apache-tomcat-7.0.68.tar.gz','tomcat_environment.sh']
 
 env.user = 'root'
-env.hosts = ['139.224.37.185:61301','139.224.37.185:61302']
-env.password = '50dxOp&^4V1z'
+env.hosts = []
+env.password = '123'
 env.colorze_errors = True
 
 env.tomcat_unmpress_dir = local_file[0].rstrip('.tar.gz')
