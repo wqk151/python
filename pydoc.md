@@ -147,4 +147,7 @@ In [79]: dic
 Out[79]: defaultdict(dict, {'k1': {'k2': 'aaa'}})
 虽然字典中没有键值k1，但仍然可以执行字典的update方法。
 ```
-
+## 07.使用with忽视异常（仅限Python3）
+from contextlib import ignored  # Python 3 only
+with ignored(OSError):
+    os.remove("somefile.txt")
